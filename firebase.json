@@ -1,0 +1,25 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "shan-koe-mee-myanmar",
+                    "appId": "1:875301932333:android:27e11f3d2f1163908b97a4",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "shan-koe-mee-myanmar",
+                    "configurations": {
+                        "android": "1:875301932333:android:27e11f3d2f1163908b97a4",
+                        "ios": "1:875301932333:ios:4c83ccf361afe3a98b97a4",
+                        "macos": "1:875301932333:ios:4c83ccf361afe3a98b97a4",
+                        "web": "1:875301932333:web:632b448c257b81168b97a4",
+                        "windows": "1:875301932333:web:d134b8a466657ed88b97a4"
+                    }
+                }
+            }
+        }
+    }
+}

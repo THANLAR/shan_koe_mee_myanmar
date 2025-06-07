@@ -1,0 +1,86 @@
+# .gitignore for Flutter/Dart/Android/iOS/VSCode/IntelliJ projects
+# Each line below is commented for explanation
+
+# Java class files
+*.class
+# Log files
+*.log
+# Python compiled files
+*.pyc
+# Swap files
+*.swp
+# macOS Finder metadata
+.DS_Store
+# Atom editor folder
+.atom/
+# Build output folder
+.build/
+# Build log folder
+.buildlog/
+# History files
+.history
+# SVN folders
+.svn/
+# Swift Package Manager folder
+.swiftpm/
+# Migration working directory
+migrate_working_dir/
+
+# IntelliJ related files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code settings (workspace-specific, not project-wide)
+.vscode/*.code-workspace
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+
+# Firebase debug logs
+firebase-debug.log
+firebase-debug.*.log
+
+# Firebase/Google config files (optional, uncomment to ignore if needed)
+ios/Runner/GoogleService-Info.plist
+android/app/google-services.json
+
+**/generated_plugin_registrant.dart
+functions/node_modules/
+functions/.firebase/
+
+/android/local.properties
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/Flutter.xcconfig
+ios/Flutter/App.framework/
+ios/Flutter/engine/
+ios/Flutter/flutter_export_environment.sh
+
+/build/web/
+coverage/
+*.tmp
+*.temp
+.cache/
+/android/app/build/outputs/mapping/
+app.*.symbols
+app.*.map.json
+/lib/generated/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Android Studio build artifacts
+/android/app/debug
+/android/app/profile
+/android/app/release

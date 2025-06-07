@@ -1,0 +1,35 @@
+{
+    "name": "shan_koe_mee_myanmar",
+    "short_name": "shan_koe_mee_myanmar",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "A digital revival of Shan Koe Mee — Myanmar’s classic card game, lovingly reimagined in Flutter. Dive into a smooth, offline-first experience with authentic Myanmar UI, realistic card animations, and smart AI to challenge your wits. Built with clean architecture, flutter_bloc, and Firebase-powered sync for seamless play anytime, anywhere.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
