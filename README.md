@@ -1,7 +1,7 @@
 
 # 🃏 Shan Koe Mee Myanmar
 
-A beautifully crafted Flutter implementation of the beloved traditional Burmese card game — **Shan Koe Mee (ရွမ်းကိုယ်မီး)**. Built with ❤️ using modern Flutter architecture, offline-first logic, and optimized for smooth performance on both Android and iOS.
+A beautifully crafted Flutter implementation of the beloved traditional Burmese card game — **Shan Koe Mee (ရှမ်းကိုးမီး)**. Built with ❤️ using modern Flutter architecture, offline-first logic, and optimized for smooth performance on both Android and iOS.
 
 ---
 
