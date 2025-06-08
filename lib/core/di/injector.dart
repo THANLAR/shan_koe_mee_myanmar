@@ -9,6 +9,7 @@ import 'package:shan_koe_mee_myanmar/features/public/domain/repositories/socket_
 import 'package:shan_koe_mee_myanmar/features/public/domain/usecases/create_room.dart';
 import 'package:shan_koe_mee_myanmar/features/public/domain/usecases/join_room.dart';
 import 'package:shan_koe_mee_myanmar/features/public/presentation/bloc/multiplayer_bloc.dart';
+import 'package:shan_koe_mee_myanmar/features/room/presentation/bloc/room_bloc.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:shan_koe_mee_myanmar/firebase_options.dart';
 
@@ -34,6 +35,8 @@ Future<void> setupDependencies({bool useWebSocket = false}) async {
 
   // Register Bloc
   getIt.registerFactory(() => MultiplayerBloc(getIt<SocketService>()));
+  // Register RoomBloc for the new room feature
+  getIt.registerFactory<RoomBloc>(() => RoomBloc());
 }
 
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {

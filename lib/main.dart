@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shan_koe_mee_myanmar/card_shaffel.dart';
 import 'package:shan_koe_mee_myanmar/core/di/injector.dart';
 import 'package:shan_koe_mee_myanmar/core/utils/super_print.dart';
 import 'package:shan_koe_mee_myanmar/features/public/presentation/bloc/multiplayer_bloc.dart';
-// import 'package:shan_koe_mee_myanmar/features/multiplayer/presentation/pages/multiplayer_page.dart';
+import 'package:shan_koe_mee_myanmar/features/room/presentation/bloc/room_bloc.dart';
+import 'package:shan_koe_mee_myanmar/features/room/presentation/pages/room_home_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,20 +14,27 @@ void main() async {
     }
   };
   await setupDependencies(useWebSocket: false);
-  runApp(const CardStackApp());
+  runApp(const MyApp());
 }
 
-class CardStackApp extends StatelessWidget {
-  const CardStackApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: BlocProvider(
-        create: (_) => getIt<MultiplayerBloc>(),
-        child: const CardShuffleScreen(), //CardShuffleScreen  MultiplayerPage
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (context) => getIt<MultiplayerBloc>()),
+        BlocProvider(create: (context) => getIt<RoomBloc>()),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+          useMaterial3: true,
+        ),
+        home: const RoomHomePage(),
       ),
-      debugShowCheckedModeBanner: false,
     );
   }
 }
